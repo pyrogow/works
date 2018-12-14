@@ -1,0 +1,52 @@
+body {
+    background-color: greenyellow;
+    text-align: center;
+}
+.calculator {
+    background-color: black;
+    font-size: 28px;
+    margin: 0 auto;
+    width: 250px;
+}
+.viewer {
+    color: black;
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
+    text-align: right;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.num {
+    background-color: rgb(85, 85, 85);
+    color: white;
+    border-radius: 50%;
+}
+.ops {
+    background-color:orange;
+    color: white;
+    border-radius: 50%;
+}
+.greyops {
+    background-color:rgb(199, 199, 199);
+    color: white;
+    border-radius: 50%;
+}
+button {
+    transition: all 0.2s;
+    height: 50px;
+    width: 50px;
+    margin: 1px;
+    cursor: pointer;
+    padding: 0;
+    border: 0;
+}
+button:hover {
+    color: red;
+    background-color: rgb(46, 46, 46);
+}
+.zero   {
+    height: 50px;
+    width: 108px;
+    border-radius: 25px;
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+.wrapper{
+  background: #f3f3f3;
+  position: relative;
+  .container{
+    max-width: 1230px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 40px 15px 40px;
+    a{
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+  &:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 200px;
+    bottom: -200px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    transform: skewY(5deg);
+    transform-origin: 100%;
+  }
+}
+footer{
+  background: #00113d;
+}

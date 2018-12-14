@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form name="testform">
+        <fieldset>
+            <input type="text" name="res" value="0">
+
+            <input type="hidden" name="tmp" value="0">
+            <input type="hidden" name="op" value="+">
+            <input type="hidden" name="flag" value="false">
+
+            <input type="button" class="num" name="btn1" value="1" onclick="return res.value = btn1.value">
+            <input type="button" class="num" name="btn2" value="2" onclick="return res.value = btn2.value">
+            <input type="button" class="num" name="btn3" value="3" onclick="return res.value = btn3.value">
+            <input type="button" class="num" name="btn4" value="4" onclick="return res.value = btn4.value">
+            <input type="button" class="num" name="btn5" value="5" onclick="return res.value = btn5.value">
+            <input type="button" class="num" name="btn6" value="6" onclick="return res.value = btn6.value">
+            <input type="button" class="num" name="btn7" value="7" onclick="return res.value = btn7.value">
+            <input type="button" class="num" name="btn8" value="8" onclick="return res.value = btn8.value">
+            <input type="button" class="num" name="btn9" value="9" onclick="return res.value = btn9.value">
+            <input type="button" class="num zero" name="btn0" value="0" onclick="return res.value = btn0.value">
+            <input type="button" class="num pointbutton" name="btn_point" value="." onclick="return res.value = btn0.value">
+            <input type="button" class="ops" name="btn_add" value="+" onclick="operation()">
+            <input type="button" class="ops" name="btn_minus" value="-" onclick="operation2()">
+            <input type="button" class="ops" name="btn_mult" value="*" onclick="operation3()">
+            <input type="button" class="ops" name="btn_div" value="/" onclick="operation4()">
+            <input type="button" class="equals ops" name="btn_result" value="=" onclick="return res.value = getResult(tmp.value, res.value, op.value)">
+        </fieldset>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
